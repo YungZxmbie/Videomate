@@ -1,0 +1,303 @@
+@import url('../CSS/font.css');
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: Rowdie;
+    src: url('../font/Rowdies/Rowdies-Light.ttf');
+    background: rgb(0, 0, 0);
+    min-height: 100vh;
+}
+
+:root{
+
+    /*    theme colors    */
+    --text-grey: rgb(17, 0, 255);
+    --text-light: rgb(0, 17, 255);
+    --bg-color: #000000;
+    --white: #ffff;
+    --midnight: #b7fad5;
+
+    /*gradient color*/
+    --sky: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+
+        /*  theme font-family  */
+    --Rowdies:'Rowdies', cursive;
+    --Syne_Tactile:'Syne_Tactile', cursive;
+    --Varela_Round:'Varela_Round', cursive;
+}
+
+/*---------------------- Global classes-------------------- */
+
+a{
+    text-decoration: none;
+    color: var(--text-grey);
+    font-size: 1.3rem;
+    font-family: var(--Rowdies);
+    justify-content: center;
+
+
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Rowdies);
+    font-size: 2.5rem;
+    color: rgb(104, 214, 141);
+}
+h2{
+    font-family: var(--Syne_Tactile);
+    font-weight: bold;
+ }
+
+ h3{
+    font-family: var(--Syne_Tactile);
+     font-size: 1.3rem;
+ }
+ h6{
+     font-family: var(--Rowdies);
+     font-size: 1.3rem;
+     font-weight: bold;
+ }
+header i {
+    color: var(--white);
+}
+button.btn{
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Rowdies);
+    cursor: pointer;
+    border: none;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+
+}
+
+/*--------------x---------Global Classes-----------x-----------*/
+
+/*-----------------------Navigation bar------------------------*/
+nav{
+    background: rgb(104, 214, 141);
+    padding: 0 2rem;
+    overflow: hidden;
+    transition:  height 1s ease in-out;
+    -webkit-transition:  height 1s ease in-out;
+    -moz-transition:  height 1s ease in-out;
+    -ms-transition:  height 1s ease in-out;
+    -o-transition:  height 1s ease in-out;
+    font-size: 2.5rem;
+    font-family: var(--Rowdies);
+    font-weight: 500;
+}
+.nav a :hover{
+    color: chartreuse;
+}
+.nav a ::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(78, 155, 47);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transition: all ease in-out 250ms;
+    -webkit-transition: all ease in-out 250ms;
+    -moz-transition: all ease in-out 250ms;
+    -ms-transition: all ease in-out 250ms;
+    -o-transition: all ease in-out 250ms;
+}
+.nav a :hover::before{
+    width: 100%;
+}
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0;
+    width: 90%;
+    cursor: 90%;
+    display: none;
+}
+.nav .toggle-collapse .toggle-icons{
+    font-size: 1.2rem;
+    color: var(--text-grey);
+}
+.collapse{
+    height: 28rem;
+}
+.nav .nav-menu{
+    justify-content: space-between;
+}
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    cursor: pointer;
+}
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+}
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+    font-family: Rowdies-light;
+}
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 0.8rem;
+    position: relative;
+}
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem o;
+    display: block;
+    font-family: var(--bg-color);
+}
+.nav .nav-link a:hover{
+    color: rgb(72, 255, 0);
+    border: 2px solid #176d45;
+    border-radius: 26px;
+    -webkit-border-radius: 26px;
+    -moz-border-radius: 26px;
+    -ms-border-radius: 26px;
+    -o-border-radius: 26px;
+    transition: all ease-in-out 250ms;
+    -webkit-transition: all ease-in-out 250ms;
+    -moz-transition: all ease-in-out 250ms;
+    -ms-transition: all ease-in-out 250ms;
+    -o-transition: all ease-in-out 250ms;
+}
+/*-----------------x--------Navigation bar---------x--------------*/
+
+
+/* ------------------------Sign up/login------------------------ */
+
+.form{
+    width: 50px;
+    height: 80px;
+    background: linear-gradient(rgb(126, 12, 12));
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    border-radius: 10px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+    padding: 25px;
+}
+
+
+/*------------------------Main Content----------------------------*/
+
+
+/*-----------------------site title-----------------------------*/
+
+main .site-title{
+    background: rgb(77, 121, 129);
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--bg-color);
+}
+
+main .site-title btn{
+    margin: 1.8rem;
+    background: var(--sky);
+}
+
+main .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+}
+
+/* --------------x---------site title------------x-------------*/
+
+/*------------------------Main Content-------------------------*/
+
+
+
+/*------------------------Video section------------------------*/
+
+.videos{
+    border-radius: 5px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+    box-sizing: border-box;
+    box-shadow: #176d45;
+}
+
+/* viewport less than 750px */
+
+@media screen and (max-width: 600px) {
+    .nav a:not(:first-child){display: none;}
+    .nav a.icon {
+        float: right;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav .responsive {position: relative;}
+    .nav .responsive a.icon{
+        position: absolute;
+    }
+    .nav .nav-menu .nav .nav-items{
+        flex-direction: column;
+    }
+    .nav .toggle-collapse{
+        display: initial;
+        right: 0;
+        top: 0;
+    }
+    .nav .responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* x          Viewport less then or equal to 600px             x */
+
+footer{
+    background: #176d45;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+.duration{
+    width: 80vw;
+    height: 2px;
+    background: var(--white);
+}
+.song-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 2;
+    padding: 0px 10px;
+    color: var(--white);
+}
+.bar{
+    align-items: center;
+    display: flex;
+}
+.bar img{
+    width: 40px;
+}
